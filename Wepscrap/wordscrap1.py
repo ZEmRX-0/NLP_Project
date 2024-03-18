@@ -24,10 +24,10 @@ if response.status_code == 200:
     sorted_unique_words = sorted(words)
 
 
-    with open('sorted_unique_words.txt', 'w',encoding='utf-8') as file:
+    with open('extractedwords.txt', 'w',encoding='utf-8') as file:
         for word in sorted_unique_words:
             file.write(word + '\n')
 
-    print("Sorted unique words after data-term= extracted and written to 'sorted_unique_words.txt' file.")
+    print("Sorted unique words after data-term= extracted and written to 'extractedwords.txt' file.")
 else:
     print(f"Error: {response.status_code}")
